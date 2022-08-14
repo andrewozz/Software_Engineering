@@ -1,1 +1,1 @@
-# CZ2006-project
+# Software Engineering project (cz2006)
