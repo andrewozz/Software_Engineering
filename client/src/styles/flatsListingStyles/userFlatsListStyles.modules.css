@@ -1,0 +1,14 @@
+.userListedFlatsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 40%;
+}
+.userListedFlatsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    /* align-items: ; */
+}

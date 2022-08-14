@@ -1,0 +1,793 @@
+/* set variables here */
+
+:root {
+  --primary : rgb(33, 37, 41);
+  --secondary : #ffc107;
+  --darkBlue : #1F2833;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* custom styling for widgets*/
+.custom-button
+{
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+  border: none;
+  margin: 10px 0px;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.custom-input
+{
+  margin: 8px 0px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  height: 35px;
+  border: 1px solid black;
+}
+
+.custom-container
+{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-modal-bg
+{
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0 ,0, 0.8);
+  margin: 0;
+  position:fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.custom-modal
+{
+  
+  height: 650px;
+  width: 75%;
+  overflow: auto;
+  background-color: white;
+}
+
+.card
+{
+  padding: 35px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+option:hover
+{
+  background-color: black;
+  color: white;
+}
+
+textarea
+{
+  max-height: 300px;
+}
+
+
+
+/* Navbar */
+
+
+.navbar
+{
+  font-size: 16px;
+  padding: 5px 10px;
+  z-index: 120;
+}
+
+.navbarlogo
+{
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+.navbar .navbarlink
+{
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+.navbarBrand
+{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 22px;
+}
+.navbarBrand:hover
+{
+  text-decoration: none;
+  color: aliceblue;
+}
+.navbarlink
+{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 18px;
+  padding: 5px 7px;
+}
+
+.translucentBackground
+{
+  background-color: rgba(0,0 ,0, 0.7);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Homepanel page*/
+
+.homepage
+{
+  background: url("../images/home_background.jpeg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepanel
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0,0 ,0, 0.2);
+  padding: 45px;  
+  border-radius: 15px;
+}
+
+.homepanel .title{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+
+}
+
+.homepanel .btn
+{
+  margin: 10px;
+  font-weight: bolder;
+  font-size: 14px;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+
+.homepanel .authentication
+{
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+}
+
+
+.homepanel .discover
+{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  margin-top: 10px;
+  width: 100% ;
+  background: var(--secondary);
+}
+
+.searchbar
+{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.searchfield
+{
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 5px;
+  margin: 10px 3px;
+  font-size: 13px;
+  color: rgba(0,0 ,0, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-btn
+{
+  background: var(--secondary);
+  font-family:Arial, Helvetica, sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bolder;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+}
+.town
+{
+  width: 120px;
+  
+}
+.block
+{
+  width: 80px;
+}
+.street
+{
+  width: 200px;
+}
+.storey
+{
+  width: 100px;
+}
+
+.flatTypes
+{
+  width: 100px;
+}
+
+
+/* Search Page */
+.search-page
+{
+  background: url("../images/home_background.jpeg") ;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.search-page .resale-flat:hover
+{
+  cursor: pointer;
+}
+/* Explore page */
+
+.explore
+{
+  background: url("../images/exploreBackground.jpg") ;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.resale-flat-group
+{
+  background-color: yellow;
+  width: 400px;
+}
+
+.resale-flat-type-modal
+{
+  background-color: #fefefe;
+  padding: 45px 30px;
+  border: 1px solid #888;
+  width: 80%; 
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  
+}
+
+.close
+{
+  font-size: 35px;
+  position: absolute;
+  top:0;
+  right: 0;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-right: 20px;
+  color: var(--darkBlue);
+  border-radius: 50%;
+}
+
+
+
+.close:hover
+{
+  cursor: pointer;
+}
+
+.resale-flat-type-info
+{ 
+  width: 58%;
+  background-color: seashell;
+  padding: 30px;
+  min-height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  overflow-y: auto;
+}
+
+
+.resale-flat-type-info h3 /* left part of modal */
+{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400px;
+}
+.resale-flat-type-transactions /* right part of modal */
+{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 42%;
+  margin-left: 30px;
+  min-height: 100%;
+  display: flex;
+  background-color: #7d94b5;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  padding: 30px;
+}
+
+.resale-flat /* styling for resale-type-flat */
+{
+  display: flex;
+  flex-direction: column;
+  background-color: seashell;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  color: black;
+  padding: 10px;
+  width: 400px;
+  padding: 10px 20px;
+  justify-content: center;
+  border-left: 10px solid green;
+  font-size: 15px;
+}
+.resale-flat-transactions
+{
+  display: flex;
+  flex-direction: column;
+  background-color: seashell;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  padding: 10px;
+  width: 400px;
+  padding: 10px 20px;
+  justify-content: center;
+  border-left: 10px solid var(--darkBlue);
+  font-size: 15px;
+}
+.valuate-div
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.valuate-btn
+{
+  background-color: var(--darkBlue);
+  color: white;
+  border-radius: 5px;
+  padding: 8px 18px;
+  width: 90%;
+  margin: 10px;
+  text-align: center;
+}
+.valuate-btn:hover
+{
+  color:white;
+}
+
+.resale-flat li 
+{
+  list-style-type: none;
+}
+
+
+/* User settings Page */
+
+
+/* User Profile Information */
+.user-banner
+{
+  min-height: 360px;
+  background-image: url("../images/user_banner_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.user-banner-sidemodal
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 10px 60px;
+  background-color: rgba(0,0 ,0, 0.7);
+  padding: 12px 25px;
+  color: white;
+  border-radius: 15px;
+}
+.user-banner-sidemodal-name{
+  margin-top: 10px;
+}
+
+.user-banner-sidemodal-username{
+  padding-bottom: 2px;
+  margin-bottom: 4px;
+}
+.user-details .taskbar-container
+{
+  display: flex;
+  justify-content: center;
+}
+
+.user-details .taskbar
+{
+  min-height: 50px;
+  color: rgb(33, 37, 41);
+  padding: 0px 20px;
+  font-size: 26px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.taskbar-tab
+{
+  padding: 10px 30px;
+
+}
+.taskbar-tab:hover
+{
+  cursor: pointer;
+}
+
+
+.active
+{
+  border-bottom: 6px solid  rgb(33, 37, 41);
+}
+
+.user-details .container
+{
+  width: 60%;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.user-details .profile-info
+{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  text-align: center;
+  margin-top: 20px;
+  min-height: 400px;
+  margin-bottom: 50px;
+}
+
+input
+{
+  border-radius: 3px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+.user-details .profile-info p
+{
+  font-size: 20px;
+}
+
+.user-details .profile-info button
+{
+  padding: 10px 20px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgb(33, 37, 41);
+  color: white;
+  border-radius: 5px ;
+}
+
+
+/* Listings */
+
+.listings
+{
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;
+  position: relative;
+  /* background-color: yellow; */
+}
+.listings .add-listing
+{
+  background-color: var(--primary);
+  padding: 10px 20px;
+  color: white;
+  margin-bottom: 20px;
+  width: 50%;
+  
+}
+.listing
+{
+  position: relative;;
+  width: 45%;
+  background-color: rgb(253, 251, 249);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.listing:hover
+{
+  cursor: pointer;
+}
+
+.listing-bookmark
+{
+  font-size: 45px;
+  position: absolute;
+  right: 0px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.listing-banner-image
+{
+  /* background-image: url(../images/listing.jpg); */
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.listing-information
+{
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.listed-by
+{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.listed-by p
+{
+  padding: 5px 10px;
+  text-align: center;
+  border: 2px solid var(--primary) ;
+  border-radius: 5px;
+}
+
+.listing-modal
+{
+  background-color: #fefefe;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+}
+
+
+.listing-modal form
+{
+  width: 80%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+.listing-modal .buttons
+{
+  display: flex;
+  flex-direction: column;
+}
+.listing-modal button
+{
+  background-color: var(--primary);
+  color: white;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Bookmarks */
+.user-bookmarks
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.delete-bookmark
+{
+  position: absolute;
+  right: 16px;
+  color: white;
+  background-color: var(--primary);
+  top: 16px
+}
+
+/* Footer */
+.footer
+{
+  font-size: 22px;
+  width: 300px;
+}
+.footer .brandname
+{
+  font-size: 36px;
+  margin: 5px 20px;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer .copyright
+{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  padding-bottom: 0px;
+
+}
+.footer .addInfo
+{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  margin: 10px 20px ;
+  text-decoration: underline;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+
+/* Contact seller form for emailing */
+
+.contact-seller h3
+{ 
+  margin: 25px;
+}
+.container-form
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-contact-seller
+{
+  padding: 20px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-seller form
+{
+  width: 80%;
+}
+
+.contact-seller .submit-btn:hover
+{
+  color: white;
+}
+
+
+/* Responsiveness of web application */
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 1000px) {
+  .searchbar{
+    display: flex;
+    flex-direction: column;
+  }
+  .homepanel
+  {
+    min-width: 70%;
+  }
+
+  .searchfield
+  {
+    width: 100%;
+  }
+
+  .search-btn
+  {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  } 
+
+  .listing
+  {
+    width: 90%;
+  }
+}
+
+
+/* Fonts */
+.courgette-font
+{
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+}

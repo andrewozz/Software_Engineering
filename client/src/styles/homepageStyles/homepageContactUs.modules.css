@@ -1,0 +1,51 @@
+.contact-us
+{
+    background-color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.contact-us form
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    padding: 40px 40px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+
+}
+h3
+{
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+form input, form select
+{
+    margin-bottom: 20px;
+    border-radius: 3px;
+    height: 35px;
+}
+
+form textarea
+{
+    min-height: 150px;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.submit-btn
+{
+    background-color: #212529;
+    color: white;
+    margin-top: 20px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}

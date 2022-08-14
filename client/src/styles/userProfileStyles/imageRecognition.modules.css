@@ -1,0 +1,15 @@
+.img-canvas-div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#profile-pics {
+    filter: blur(0px);
+    width: 250px;
+    height: 250px;
+}
+#profile-pics-canvas {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}

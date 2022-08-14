@@ -1,0 +1,67 @@
+.services .title-services
+{
+    color: #505c67;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+.feature-section
+{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.feature-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-height: 500px;
+}
+
+.img1
+{
+    background-image: url(../../images/search-feature.jpg);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img2
+{
+    background-image: url(../../images/view-listings.jpg);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img3
+{
+    background-image: url(../../images/deal.jpg );
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content-title
+{
+    font-size: 23px;
+    margin: 12px;
+    font-weight: 500;
+    text-align: center;
+
+}
+    
+.content-text
+{
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,27 @@
+.hpage-ft-sect {
+    height: 25em;
+    display: grid;
+    column-gap: 0px;
+}
+.hpage-ft-sect:nth-child(2n+1) {
+    grid-template-columns: 45% 55%;
+}
+.hpage-ft-sect:nth-child(2n) {
+    grid-template-columns: 55% 45%;
+}
+.sect-div-r {
+    background-color: #495057;
+}
+.sect-div-l{
+    background-color: #343a40;
+}
+.ft-sect-img{
+    filter: blur(0px);
+    width: 100%;
+    height: 25em;
+}
+.sect-div-word{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

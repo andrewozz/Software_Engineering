@@ -1,0 +1,23 @@
+.flat-amenities-info
+{
+  margin: 10px 30px;
+  padding: 20px;
+}
+.flat-amenities-info p
+{
+  font-weight: 500;
+}
+
+.resale-flat-map {
+    filter: blur(0px);
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+}
+.user-profile-modal {
+      backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.58);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}

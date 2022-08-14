@@ -1,0 +1,147 @@
+:root {
+    --imageHeight: 52rem;
+    --borderRadius:10px;
+    --btnBorder: 2px solid;
+    --baseColor: #f8f9fa;
+}
+img {
+    height: var(--imageHeight);
+    filter: blur(4px);
+}
+.carou1-heading{
+    height: var(--imageHeight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    animation: animatebottom 1.5s;
+    position: relative;    
+    
+}
+.heading-card
+{
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.heading-widgets
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.cItem1-page-title {
+    font-size: 55px;
+    text-align: center;
+    font-weight: 600;
+    color: orange;
+
+}
+@keyframes animatebottom { 
+  from{ bottom:-80%; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+.cItem1-btn-div {
+    margin-top: 15px;
+    display: flex;
+    width: 12em;
+    justify-content: space-between;
+}
+.cItem1-btn {
+    width: 80px;
+    height: 45px;
+    border-radius: var(--borderRadius);
+}
+#cItem1-signup-btn {
+    background-color: #fb5607;
+    /* background-color: transparent; */
+    color: var(--baseColor);
+    border: var(--btnBorder) none;
+}
+#cItem1-about-btn {
+    background-color: transparent;
+    color: var(--baseColor);
+    border: var(--btnBorder) #fb5607;
+}
+#cItem1-last-div{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+#aTag-LMore{
+    text-decoration: none;
+    color: var(--baseColor);
+    font-size: 1.5em;
+}
+.arrow-down-icon{
+    height: 30px;
+    width: 30px;
+}
+
+/* section for outline */
+.basic-1 {
+	padding-top: 8rem;
+	padding-bottom: 7rem;
+	background: linear-gradient(to bottom right, #414c56, #2f3a43);
+	text-align: center;
+}
+.basic-1 .text-container {
+	margin-bottom: 2rem;
+}
+.basic-1 .element .icon {
+	width: 128px;
+	height: 128px;
+	margin-bottom: 1rem;
+}
+.basic-1 .element .title {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 1.375rem;
+	line-height: 1.75rem;
+}
+.basic-1 .fa-chevron-down {
+	margin-bottom: 1.25rem;
+	color: #cfd7e0;
+	font-size: 1rem;
+}
+.basic-1 .fa-chevron-right {
+	display: none;
+}
+
+.testimonial-text
+{
+    font-size: 22px;
+    color: white;
+    font-family: 'Courgette', cursive;
+}
+.outline-icons
+{
+    color: white;
+    font-size: 120px;
+    background-color: #505c67;
+    border-radius: 50%;
+    padding-bottom: 10px;
+    width: 190px;
+}
+.outline-arrow
+{
+    color: white;
+    font-size: 100px;
+}
+.flow-chart
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flow-chart .element
+{
+    margin: 60px;
+}
